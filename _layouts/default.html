@@ -6,15 +6,27 @@
   <body>
 
     {% include header.html %}
-
-    <section class="main-content">
+    <div class="blog-header">
       <div class="container">
-        {{ content }}
+        <h1 class="blog-title">Notes</h1>
+        <p class="lead blog-description">A website with some notes</p>
       </div>
-    </section>
+    </div>
 
-    {% include footer.html %}
 
-  </body>
+    <div class="container">
 
+        <div class="row">
+
+            <div class="blog-main">
+                {{ content }}
+            </div>
+
+        </div>
+
+    </div>
+
+    {% include footer.html %}  
+
+    </body>
 </html>
